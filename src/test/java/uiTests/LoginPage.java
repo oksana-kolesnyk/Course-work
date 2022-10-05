@@ -5,9 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.interactions.Actions;
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-import  static java.lang.Thread.sleep;
+
 
 public class LoginPage extends BasePage {
 
@@ -42,5 +40,27 @@ public class LoginPage extends BasePage {
             e.printStackTrace();
         }
     }
+
+    public void LogIn() {
+        clickButton(userNameField);
+        typeUserName("testOksana");
+        clickButton(passwordField);
+        typePassword("Test123%");
+        clickButton(loginButtonOnLoginPage);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
+
+
+
+
+
+
 }
 

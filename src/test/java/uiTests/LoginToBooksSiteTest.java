@@ -1,20 +1,21 @@
 package uiTests;
 
 import org.junit.Test;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 
 public class LoginToBooksSiteTest extends BasePage {
 
-    public LoginToBooksSiteTest() {
-        super();
+    public LoginToBooksSiteTest(WebDriver driver) {
+
+        super(driver);
     }
 
     @Test
-    public void searchTest() throws InterruptedException {
+    public void LoginToSiteTest() throws InterruptedException {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-        BooksPage booksPage = PageFactory.initElements(driver, BooksPage.class);
 
         homePage.isElementPresent(homePage.loginButton);
         homePage.clickButton(homePage.loginButton);
