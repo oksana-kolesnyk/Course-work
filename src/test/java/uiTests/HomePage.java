@@ -17,6 +17,6 @@ public class HomePage extends BasePage{
         wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
 
-    @FindBy(xpath = "//button[@class = 'btn btn-primary']")
+    @FindBy(xpath = "//*[@id='login']")
     public WebElement loginButton;
 }

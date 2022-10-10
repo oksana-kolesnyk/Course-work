@@ -3,11 +3,9 @@ package uiTests;
 import org.junit.Test;
 import org.openqa.selenium.support.PageFactory;
 
-
 public class LoginToBooksSiteTest extends BasePage {
 
     public LoginToBooksSiteTest() {
-
         super();
     }
 
