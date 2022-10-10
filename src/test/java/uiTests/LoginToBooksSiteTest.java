@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginToBooksSiteTest extends BasePage {
 
-    public LoginToBooksSiteTest(WebDriver driver) {
+    public LoginToBooksSiteTest() {
 
-        super(driver);
+        super();
     }
 
     @Test
