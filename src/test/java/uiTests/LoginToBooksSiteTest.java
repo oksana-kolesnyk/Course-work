@@ -20,6 +20,7 @@ public class LoginToBooksSiteTest extends BasePage {
         loginPage.isElementPresent(loginPage.userNameField);
         loginPage.typeUserName("testOksana");
 
+        Thread.sleep(1000);
         loginPage.isElementPresent(loginPage.passwordField);
         loginPage.typePassword("Test123%");
 
