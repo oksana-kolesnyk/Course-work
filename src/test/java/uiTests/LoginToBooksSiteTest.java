@@ -18,11 +18,9 @@ public class LoginToBooksSiteTest extends BasePage {
         homePage.clickButton(homePage.loginButton);
 
         loginPage.isElementPresent(loginPage.userNameField);
-        loginPage.clickButton(loginPage.userNameField);
         loginPage.typeUserName("testOksana");
 
         loginPage.isElementPresent(loginPage.passwordField);
-        loginPage.clickButton(loginPage.passwordField);
         loginPage.typePassword("Test123%");
 
         loginPage.clickButton(loginPage.loginButtonOnLoginPage);

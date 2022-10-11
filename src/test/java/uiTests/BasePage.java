@@ -2,7 +2,6 @@ package uiTests;
 
 import org.junit.After;
 import org.junit.Before;
-
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
@@ -15,7 +14,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 
 
     public class BasePage {
@@ -75,6 +73,5 @@ import org.openqa.selenium.support.ui.WebDriverWait;
             field.sendKeys(text);
             wait.until(ExpectedConditions.textToBePresentInElementValue(field, text));
         }
-
     }
 

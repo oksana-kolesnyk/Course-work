@@ -39,9 +39,8 @@ public class LoginPage extends BasePage {
     }
 
     public void LogIn() {
-        clickButton(userNameField);
+
         typeUserName("testOksana");
-        clickButton(passwordField);
         typePassword("Test123%");
         clickButton(loginButtonOnLoginPage);
         try {
